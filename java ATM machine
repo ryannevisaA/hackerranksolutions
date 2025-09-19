@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        int amt,count;
+        System.out.println("Total number of notes:");
+        amt=sc.nextInt();
+        count=amt/500;
+        amt=amt%500;
+        System.out.println("500 : " +count);
+         count=amt/100;
+        amt=amt%100;
+        System.out.println("100 : " +count);
+         count=amt/50;
+        amt=amt%50;
+        System.out.println("50 : " +count);
+         count=amt/20;
+        amt=amt%20;
+        System.out.println("20 : " +count);
+        count=amt/10;
+        amt=amt%10;
+        System.out.println("10 : " +count);
+        count=amt/5;
+        amt=amt%5;
+        System.out.println("5 : " +count);
+        count=amt/2;
+        amt=amt%2;
+        System.out.println("2 : " +count);
+        count=amt/1;
+        amt=amt%1;
+        System.out.println("1 : " +count);
+}
+}
